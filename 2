@@ -1,0 +1,15 @@
+import operator
+
+# List of tuples containing items and their prices
+items = [
+    ("Apple", 1.25),
+    ("Banana", 0.75),
+    ("Orange", 1.0),
+    ("Grapes", 2.5),
+    ("Mango", 3.0)
+]
+
+sorted_items = sorted(items, key=operator.itemgetter(1), reverse=True)
+
+for item in sorted_items:
+    print(item)
